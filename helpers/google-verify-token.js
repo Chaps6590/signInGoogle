@@ -21,10 +21,13 @@ const validarGoogleId = async (token) => {
   });
   const payload = ticket.getPayload();
 
-  console.log(payload);
   const userid = payload['sub'];
   // If request specified a G Suite domain:
   // const domain = payload['hd'];
+
+  console.log('=========== PAYLOAD ================')
+  console.log(payload)
+
 
   return {
 
