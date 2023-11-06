@@ -7,7 +7,9 @@ const googleAuth = async (req, res = response)=>{
 
     const token = req.body.token;
     
+    console.log(token)
     
+
     if(!token){
         return res.json({
             ok:false,
